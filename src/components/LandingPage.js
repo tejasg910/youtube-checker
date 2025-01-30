@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Search } from 'lucide-react';
 import HandleChecker from './ChannelChecker';
 
-const YouTubeChannelChecker = () => {
+const YouTubeChannelChecker = ({API_KEY}) => {
     const [query, setQuery] = useState('');
     const [result, setResult] = useState(null);
     const [error, setError] = useState('');
@@ -11,7 +11,6 @@ const YouTubeChannelChecker = () => {
 
     const searchChannel = async () => {
         // Note: API_KEY needs to be provided
-        const API_KEY = 'AIzaSyDu6gXC_xPY5r5tRfAMB-lEbS5mUm0P-YA';
         setLoading(true);
         setError('');
         setResult(null);

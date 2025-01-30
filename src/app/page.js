@@ -10,7 +10,7 @@ const page = () => {
 
 
 
-      <YouTubeChannelChecker />
+      <YouTubeChannelChecker API_KEY={process.env.YOUTUBE_API_KEY} />
 
       <SEOContent />  </div>
   )
