@@ -13,8 +13,6 @@ const PrivacyPolicy = () => {
           </p>
           <ul className="list-disc pl-6 text-gray-600 space-y-2">
             <li>Search queries you enter into the tool</li>
-            <li>Basic usage statistics to improve our service</li>
-            <li>Technical information such as browser type and device information</li>
           </ul>
           <p className="text-gray-600 mt-4">
             Through the YouTube API, we access publicly available channel information such as:
