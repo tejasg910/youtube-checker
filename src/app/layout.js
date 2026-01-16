@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -89,6 +90,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
       </body>
+        <GoogleAnalytics gaId="G-Y2M8F4SPBR" />
     </html>
   );
 }
