@@ -17,6 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: 'Channel Checker - Check if YouTube Channel Exists | Free YouTube Channel Search Tool',
   description: 'Free YouTube Channel checker tool to instantly check if a YouTube channel exists. Search any YouTube channel name, verify channel existence, and find similar channels. Best free tool for content creators and viewers.',
+
   keywords: [
     'youtube channel checker',
     'check youtube channel exists',
@@ -56,6 +57,10 @@ export const metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
+  },
+  verification: {
+    google: 'sHnwi38PmO6m7y5uuBY67oTSJFOBB-tos3KKjqPUUNg',
+
   },
 
 };
