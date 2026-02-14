@@ -1,18 +1,31 @@
-import BlogLayout from '@/components/BlogLayout'
 import YouTubeChannelChecker from '@/components/LandingPage'
 import SEOContent from '@/components/SeoContent'
 import React from 'react'
 import Link from 'next/link'
 import { blogs } from '@/lib/data'
 import { ArrowRight, Calendar, Clock } from 'lucide-react'
+import HeroSection from '@/components/HeroSection'
 
 const page = () => {
   // Get the first 8 blogs
   const recentBlogs = blogs.slice(0, 8);
 
   return (
-    <div className='mt-4 min-h-screen'>
-      <YouTubeChannelChecker API_KEY={process.env.YOUTUBE_API_KEY} />
+    <div className='min-h-screen'>
+      {/* Hero Section */}
+      <HeroSection />
+
+      {/* YouTube Checker Section */}
+      <div id="youtube-checker" className="scroll-mt-4">
+        {/* 
+          SECURITY NOTE: 
+          The API_KEY is passed to the client component below. 
+          Ensure that this key is restricted in the Google Cloud Console 
+          to only accept requests from your domain (https://chennelchecker.online) 
+          to prevent unauthorized use.
+        */}
+        <YouTubeChannelChecker API_KEY={process.env.YOUTUBE_API_KEY} />
+      </div>
 
       {/* Featured Blogs Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50/50">
@@ -43,7 +56,7 @@ const page = () => {
                     </span>
                   </div>
                   
-                  <h3 className="text-lg font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-lg font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-emerald-600 transition-colors">
                     {blog.title}
                   </h3>
                   
@@ -51,7 +64,7 @@ const page = () => {
                     {blog.description}
                   </p>
                   
-                  <div className="flex items-center text-blue-600 text-sm font-medium mt-auto group-hover:translate-x-1 transition-transform">
+                  <div className="flex items-center text-emerald-600 text-sm font-medium mt-auto group-hover:translate-x-1 transition-transform">
                     Read Article 
                     <ArrowRight className="w-4 h-4 ml-1" />
                   </div>
@@ -63,7 +76,7 @@ const page = () => {
           <div className="text-center mt-12">
             <Link 
               href="/blog" 
-              className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-emerald-600 hover:bg-emerald-700 md:py-4 md:text-lg md:px-10 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
               Explore All Articles
             </Link>

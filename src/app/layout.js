@@ -85,7 +85,7 @@ export default function RootLayout({ children }) {
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"/>
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
-        <link rel="canonical" href="https://yourdomain.com" />
+        <link rel="canonical" href="https://chennelchecker.online" />
         {/* Add your favicon here */}
         <link rel="icon" href="/favicon.ico" />
       </head>

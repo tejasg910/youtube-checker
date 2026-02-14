@@ -76,6 +76,19 @@ export default async function BlogPost({ params }) {
         <h1 className="text-3xl font-bold mb-4">{blog.title}</h1>
         <p className="text-gray-500 mb-6">{blog.date} • {blog.readTime}</p>
         <MDXContent />
+        
+        {/* Author & Disclaimer Section */}
+        <div className="mt-12 pt-8 border-t border-gray-200">
+          <div className="bg-gray-50 p-6 rounded-xl">
+            <h3 className="text-lg font-bold text-gray-900 mb-2">About the Author</h3>
+            <p className="text-gray-600 mb-4">
+              The <span className="font-semibold text-emerald-600">Channel Checker Editorial Team</span> is composed of YouTube growth strategists and data analysts. We analyze thousands of channels to bring you data-driven insights and proven strategies for growth.
+            </p>
+            <div className="text-sm text-gray-500 italic border-t border-gray-200 pt-4">
+              <strong>Disclaimer:</strong> The strategies and financial figures mentioned in this article are for educational purposes only. Individual results may vary based on niche, audience engagement, and platform changes.
+            </div>
+          </div>
+        </div>
       </article>
     </main>
   );

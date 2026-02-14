@@ -6,7 +6,7 @@ const Footer = () => (
         <div className="max-w-7xl mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
-                    <h3 className="text-xl font-bold mb-4">TubeExist</h3>
+                    <h3 className="text-xl font-bold mb-4">Channel Checker</h3>
                     <p className="text-gray-400">Bringing you the best content since 2024</p>
                 </div>
                 <div>
